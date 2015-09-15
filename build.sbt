@@ -9,6 +9,6 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test"
 
 enablePlugins(ScalaJSPlugin)
 
-// Uncomment to use Akka
-//libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.3.11"
+libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.8.0"
 
+scalaJSStage in Global := FastOptStage
