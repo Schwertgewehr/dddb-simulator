@@ -9,7 +9,7 @@ object DataController {
   val view: View = new View(document)
   def init() = ???
   def update(name: String, value: Int) = {
-    val data = DataModel(name, value).update
-    view.update(data)
+    val data = DataModel.update(name, value)
+    data.map(view.update)
   }
 }
